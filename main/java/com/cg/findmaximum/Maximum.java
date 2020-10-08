@@ -16,6 +16,5 @@ public class Maximum {
 
 	public static void printMaxInteger(Integer num1, Integer num2, Integer num3, Integer max) {
 		System.out.printf("Max of %d, %d and %d is  %d\n", num1, num2, num3, max);
-
 	}
 }
