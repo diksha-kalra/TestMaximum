@@ -39,4 +39,41 @@ public class TestMaximum {
 		}
 		Assert.assertEquals(true, flag);
 	}
+
+	@Test
+	public void testFloatMaxWithMaxAtFirstPosition() {
+		Float max = Maximum.findFloatMaximum(50.4f, 40.6f, 10.5f);
+		boolean flag;
+		if (max.equals(50.4f)) {
+			flag = true;
+		} else {
+			flag = false;
+		}
+		Assert.assertEquals(true, flag);
+	}
+	
+	@Test
+	public void testFloatMaxWithMaxAtSecondPosition() {
+		Float max = Maximum.findFloatMaximum(40.6f, 50.4f, 10.5f);
+		boolean flag;
+		if (max.equals(50.4f)) {
+			flag = true;
+		} else {
+			flag = false;
+		}
+		Assert.assertEquals(true, flag);
+	}
+
+	@Test
+	public void testFloatMaxWithMaxAtThirdPosition() {
+		Float max = Maximum.findFloatMaximum(10.5f, 40.6f, 50.4f);
+		boolean flag;
+		if (max.equals(50.4f)) {
+			flag = true;
+		} else {
+			flag = false;
+		}
+		Assert.assertEquals(true, flag);
+	}
+
 }
